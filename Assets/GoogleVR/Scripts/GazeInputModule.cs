@@ -251,7 +251,7 @@ public class GazeInputModule : BaseInputModule {
     }
 
     // Clear the click state.
-    pointerData.pointerPress = null;
+		    pointerData.pointerPress = null;
     pointerData.rawPointerPress = null;
     pointerData.eligibleForClick = false;
     pointerData.clickCount = 0;

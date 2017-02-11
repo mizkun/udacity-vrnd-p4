@@ -9,6 +9,9 @@ public class GameLogic : MonoBehaviour {
 	public GameObject startPoint, playPoint, restartPoint;
 	public GameObject[] puzzleSpheres; //An array to hold our puzzle spheres
 	public GameObject failAudioHolder;
+	public Animator openRight;
+	public Animator openLeft;
+	public GameObject gate;
 
 	public int puzzleLength = 5; //How many times we light up.  This is the difficulty factor.  The longer it is the more you have to memorize in-game.
 	public float puzzleSpeed = 1f; //How many seconds between puzzle display pulses
@@ -132,6 +135,9 @@ public class GameLogic : MonoBehaviour {
 	}
 
 	public void puzzleSuccess() { //Do this when the player gets it right
+		openLeft.
+
+
 		iTween.MoveTo (player, 
 			iTween.Hash (
 				"position", restartPoint.transform.position, 
